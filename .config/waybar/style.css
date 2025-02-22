@@ -324,12 +324,8 @@ label:focus {
 
 
 #idle_inhibitor{ 
-    padding-right: 5px;
-    color: @main-bg;
-
-
-    /*Size*/
-      
+    padding-right: 10px;
+    background: none;
     padding: 8px 12px;     
 }
 

@@ -18,9 +18,9 @@
 // positions generated based on config.ctl //
 
 	"modules-left": ["custom/padd","custom/padd",
-    "hyprland/workspaces"],
-	"modules-center": ["custom/padd","custom/padd","custom/padd"],
-	"modules-right": ["custom/updates","custom/padd","power-profiles-daemon","custom/padd","cpu","custom/padd","memory","custom/padd","temperature","custom/padd","network","custom/padd","bluetooth","custom/padd","custom/bluetooth-interaction","custom/padd","pulseaudio","custom/padd","battery","custom/padd","idle_inhibitor","custom/padd","clock","custom/padd","custom/power","custom/padd","custom/padd"],
+    "hyprland/workspaces","custom/padd","cpu","custom/padd","memory","custom/padd","temperature"],
+	"modules-center": ["idle_inhibitor","custom/padd","clock","custom/padd","custom/padd"],
+	"modules-right": ["custom/updates","custom/padd","power-profiles-daemon","custom/padd","network","custom/padd","bluetooth","custom/padd","custom/bluetooth-interaction","custom/padd","pulseaudio","custom/padd","battery","custom/power","custom/padd","custom/padd"],
 
 
 // sourced from modules based on config.ctl //
@@ -300,7 +300,7 @@
     "format-icons": ["", "", "", "", "", "", "", "", ""]
 },
 "idle_inhibitor": {
-    "format": " {icon} ",
+    "format": "{icon}",
     "interval": 1,
     "exec": "bash -c 'pgrep -x hypridle && echo  || echo '",
     "on-click": "bash -c 'pgrep -x hypridle && pkill hypridle || hypridle &'",
