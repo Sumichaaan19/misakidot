@@ -112,16 +112,16 @@ EOF
     echo -e "\033[0m"
 }
 # Define your GitHub repository URL
-REPO_URL="https://github.com/Sumichaaan19/vibedot.git"
-DEST_DIR="$HOME/vibedot"
+REPO_URL="https://github.com/Sumichaaan19/misakidot.git"
+DEST_DIR="$HOME/misakidot"
 
 # Clone the repository if it doesn't exist
 welcome_ascii
-echo "Cloning vibedot repository..."
+echo "Cloning misakidot repository..."
 if [ ! -d "$DEST_DIR" ]; then
     git clone "$REPO_URL" "$DEST_DIR"
 else
-    echo "vibedot repository already exists, pulling latest changes..."
+    echo "misakidot repository already exists, pulling latest changes..."
     cd "$DEST_DIR"
     git pull
 fi
@@ -171,7 +171,7 @@ echo "Installing necessary dependencies using yay..."
 yay -Syu --noconfirm  # Update system first
 
 # Install packages using yay
-yay -S --noconfirm sway waybar rofi fastfetch ranger kitty cava wlogout swww hypridle hyprlock blueman hyprshot python-pillow nwg-look cmatrix cbonsai tty-clock btop
+yay -S --noconfirm sway waybar rofi fastfetch ranger kitty cava wlogout swww hypridle hyprlock blueman hyprshot python-pillow  flat-remix-gtk nwg-look cmatrix cbonsai tty-clock btop
 
 # Install the basic Nerd Font (e.g., FiraCode) from AUR
 yay -S --noconfirm otf-aurulent-nerd
