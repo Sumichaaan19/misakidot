@@ -1,0 +1,10 @@
+* {
+    main-bg:            #000000;    /* Black background */
+    main-fg:            #FFD966;    /* Main foreground */
+    main-br:            #FFD966;    /* Borders */
+    main-ex:            #FFD966;    /* Extra elements */
+    select-bg:          #FFD966;    /* Selection background */
+    select-fg:          #000000;    /* Selection foreground (contrast) */
+    separatorcolor:     transparent;
+    border-color:       transparent;
+}
