@@ -213,8 +213,8 @@ tooltip {
 }
 #custom-updates
 {
-    color: @main-bg;
-
+    color: @main-fg;
+    background: none;
     /*Size*/
       
     padding: 8px 12px;     
