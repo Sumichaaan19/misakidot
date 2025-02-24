@@ -147,9 +147,12 @@ echo "Copying dotfiles to ~/.config/"
 cp -rf "$DEST_DIR/.config/cava" "$HOME/.config/cava" && echo "Copied cava to ~/.config/cava"
 cp -rf "$DEST_DIR/.config/waybar" "$HOME/.config/waybar" && echo "Copied waybar to ~/.config/waybar"
 cp -rf "$DEST_DIR/.config/hypr" "$HOME/.config/hypr" && echo "Copied hypr to ~/.config/hypr"
+cp -rf "$DEST_DIR/.config/hyde" "$HOME/.config/hyde" && echo "Copied hyde to ~/.config/hyde"
 cp -rf "$DEST_DIR/.config/kitty" "$HOME/.config/kitty" && echo "Copied kitty to ~/.config/kitty"
 cp -rf "$DEST_DIR/.config/fastfetch" "$HOME/.config/fastfetch" && echo "Copied fastfetch to ~/.config/fastfetch"
 cp -rf "$DEST_DIR/.config/nwg-look" "$HOME/.config/nwg-look" && echo "Copied nwg-look to ~/.config/nwg-look"
+cp -rf "$DEST_DIR/.config/gtk-3.0" "$HOME/.config/gtk-3.0" && echo "Copied gtk-3.0 to ~/.config/gtk-3.0"
+cp -rf "$DEST_DIR/.config/gtk-4.0" "$HOME/.config/gtk-4.0" && echo "Copied gtk-4.0 to ~/.config/gtk-4.0"
 cp -rf "$DEST_DIR/.config/ranger" "$HOME/.config/ranger" && echo "Copied ranger to ~/.config/ranger"
 cp -rf "$DEST_DIR/.config/rofi" "$HOME/.config/rofi" && echo "Copied rofi to ~/.config/rofi"
 cp -rf "$DEST_DIR/.config/swaync" "$HOME/.config/swaync" && echo "Copied swaync to ~/.config/swaync"
@@ -164,6 +167,12 @@ cp -rf "$DEST_DIR/.config/btop" "$HOME/.config/btop" && echo "Copied btop to ~/.
 echo "Replacing .bashrc..."
 cp -f "$DEST_DIR/.bashrc" "$HOME/.bashrc"
 echo "Copied .bashrc to home directory."
+
+
+# Copy ..gtkrc-2.0 and replace the existing one
+echo "Replacing .bashrc..."
+cp -f "$DEST_DIR/.gtkrc-2.0" "$HOME/.gtkrc-2.0"
+echo "Copied .gtkrc-2.0 to home directory."
 
 # Optional: Install necessary dependencies using yay
 installing_packages_ascii
