@@ -180,10 +180,11 @@ echo "Installing necessary dependencies using yay..."
 yay -Syu --noconfirm  # Update system first
 
 # Install packages using yay
-yay -S --noconfirm sway waybar rofi fastfetch ranger kitty cava wlogout swww hypridle hyprlock blueman hyprshot python-pillow  flat-remix-gtk nwg-look cmatrix cbonsai tty-clock btop
+yay -S --noconfirm sway waybar rofi fastfetch ranger kitty cava wlogout swww hypridle hyprlock blueman hyprshot python-pillow flat-remix-gtk flat-remix nwg-look cmatrix cbonsai tty-clock btop
 
 # Install the basic Nerd Font (e.g., FiraCode) from AUR
 yay -S --noconfirm otf-aurulent-nerd
+
 
 # Done
 echo "Installation complete! Please restart your terminal for .bashrc changes to take effect."
