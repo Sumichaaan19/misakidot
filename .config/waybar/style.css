@@ -241,8 +241,8 @@ tooltip {
 
 #power-profiles-daemon
 {
-    color: @main-bg;
-
+    color: @main-fg;
+    background: none;
     /*Size*/
       
     padding: 8px 12px; 
@@ -250,17 +250,17 @@ tooltip {
 
 
 #power-profiles-daemon.performance {
-    color: @main-bg;
+    color: @main-fg;
    
 }
 
 #power-profiles-daemon.balanced {
-    color: @main-bg;
+    color: @main-fg;
    
 }
 
 #power-profiles-daemon.power-saver {
-  color: @main-bg;
+  color: @main-fg;
     
 }
 
@@ -290,7 +290,8 @@ label:focus {
 }
 #network
 {
-    color: @main-bg;
+    color: @main-fg;
+    background: none;
 
     /*Size*/
       
@@ -298,9 +299,8 @@ label:focus {
 }
 #bluetooth
 {
-    color: @main-bg;
-
-
+    color: @main-fg;
+    background: none;
     /*Size*/
       
     padding: 8px 12px; 
