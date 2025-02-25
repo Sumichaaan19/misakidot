@@ -213,11 +213,11 @@ tooltip {
 }
 #custom-updates
 {
-    color: @main-fg;
+    color: @wb-act-fg;
     background: none;
     /*Size*/
       
-    padding: 8px 12px;     
+    padding: 1px 1px;     
 }
 
 #memory
@@ -245,7 +245,7 @@ tooltip {
     background: none;
     /*Size*/
       
-    padding: 8px 12px; 
+    padding: 1px 1px; 
 }
 
 
@@ -295,7 +295,7 @@ label:focus {
 
     /*Size*/
       
-    padding: 8px 12px; 
+    padding: 1px 1px; 
 }
 #bluetooth
 {
@@ -303,7 +303,7 @@ label:focus {
     background: none;
     /*Size*/
       
-    padding: 8px 12px; 
+    padding: 1px 1px; 
 }
 #pulseaudio
 {

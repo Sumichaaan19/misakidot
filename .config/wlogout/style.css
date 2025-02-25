@@ -9,27 +9,23 @@ window {
 }
 
 button {
-    color: #000000;
+    color: #ffffff;
    
     outline-style: none;
     border: none;
     border-width: 0px;
     background-repeat: no-repeat;
     background-position: center;
-    background-size: 10%;
+    background-size: 30%;
     border-radius: 5px;
-    border-color: #70ff7c;
+    border-color: #ffffff;
     
     box-shadow: none;
     text-shadow: none;
     animation: gradient_f 20s ease-in infinite;
 }
 
-button:focus {
 
-	outline-style: none;
-	background-size: 20%;
-}
 
 button:hover#lock{
 	background-color: #eaff70;

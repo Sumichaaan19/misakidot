@@ -26,9 +26,9 @@ window {
     spacing:                     0em;
     padding:                     0em;
     border-color:                @main-fg;
-    border:                      5px;
+    border:                      2px;
     background-color:            @main-bg;
-    border-radius:               2em;
+    border-radius:               1em;
 }
 mainbox {
     enabled:                     true;
@@ -46,7 +46,7 @@ mainbox {
 inputbar {
     enabled:                     true;
     spacing:                     10px;
-    padding:                     1.2em;
+    padding:                     1em;
     children:                    [ "textbox-prompt-colon", "entry" ];
     background-color:            #000000;
     // background-image:            url("~/.config/swww/wall.rofi", width);
@@ -71,7 +71,7 @@ entry {
     text-color:                  @main-fg;
     //61382D
     background-color:            transparent;
-    placeholder:                 "Search Apps";
+    placeholder:                 "Search";
     placeholder-color:           @main-fg;
     cursor:                      text;
 }

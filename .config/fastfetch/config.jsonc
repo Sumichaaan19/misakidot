@@ -3,10 +3,10 @@
 "logo": {
     "source": "$(bash ~/.config/fastfetch/scripts/random_logo.sh)",
     "type": "kitty-direct",
-    "width": 20,
-    "height": 12,
+    "width": 28,
+    "height": 18,
     "padding": {
-        "top": 5,
+        "top": 1,
         "left": 2
     }
 },
