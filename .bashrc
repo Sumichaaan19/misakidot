@@ -21,3 +21,5 @@ PROMPT_COMMAND='PS1="\n\[\033[0;1;38;5;229m\]╭─ $(get_box_info)\n\
 \[\033[0;1;38;5;229m\]│─ $(get_box_path)\n\
 \[\033[0;1;38;5;229m\]│\n\
 \[\033[0;1;38;5;229m\]╰─⮞ \[\033[0m\]"'
+
+export PATH=$PATH:/home/ralphie/.spicetify
