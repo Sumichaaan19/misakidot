@@ -1,9 +1,9 @@
 * {
     border: none;
     border-radius: 25px;
-    font-family: "JetBrainsMono Nerd Font";
+    font-family: "Nerd Font";
     font-weight: bold;
-    font-size: 15px;
+    font-size: 14px;
     min-height: 10px;
 
     border-width: 10px;
@@ -106,8 +106,8 @@ tooltip {
 #clock,
 #custom-cpuinfo,
 #cpu,
-#cava,
-#custom-visualizer,
+#custom-cava,
+
 #temperature,
 #custom-gpuinfo,
 #idle_inhibitor,
@@ -188,19 +188,17 @@ tooltip {
 }
 
 
-#cava {
-    padding: 0 5px;
+#custom-cava {
+    padding: 8px 12px;;
+    color: @main-bg;
+}
+
+#custom-player{
+    padding: 8px 12px;;
+    color: @wb-act-fg;
 }
 
 
-#custom-visualizer {
-    color: #8FBC8F;
-    border-left: 0px;
-    border-right: 0px;
-    padding-bottom: 6px;
-    font-family: "bargraph";
-    font-size: 22px;
-}
 
 #custom-cpuinfo,
 

@@ -18,7 +18,7 @@
 // positions generated based on config.ctl //
 
 	"modules-left": ["custom/padd","custom/padd",
-    "hyprland/workspaces","custom/padd","cpu","custom/padd","memory","custom/padd","temperature"],
+    "hyprland/workspaces","custom/padd","cpu","custom/padd","memory","custom/padd","temperature","custom/padd","custom/cava","custom/padd","custom/player"],
 	"modules-center": ["idle_inhibitor","custom/padd","clock","custom/padd","custom/padd"],
 	"modules-right": ["custom/updates","custom/padd","power-profiles-daemon","custom/padd","network","custom/padd","bluetooth","custom/padd","custom/bluetooth-interaction","custom/padd","pulseaudio","custom/padd","battery","custom/power","custom/padd","custom/padd"],
 
@@ -42,31 +42,21 @@
 
 //this is not working for me either
 
-"cava": {
-    //        "cava_config": "$XDG_CONFIG_HOME/cava/cava.conf",
-    "framerate": 60,
-    "autosens": 1,
-    "sensitivity": 2,
-    "bars": 20,
-    "lower_cutoff_freq": 50,
-    "higher_cutoff_freq": 10000,
-    "method": "pulse",
-    "source": "auto",
-    "stereo": true,
-    "reverse": false,
-    "bar_delimiter": 0,
-    "monstercat": false,
-    "waves": false,
-    "noise_reduction": 0.77,
-    "input_delay": 2,
-    "format-icons" : ["▁", "▂", "▃", "▄", "▅", "▆", "▇", "█" ],
-    "actions": {
-        "on-click-right": "mode",
-    "gravity": 200
-
-    }
+"custom/player": {
+   "exec": "playerctl metadata --format '{{artist}} - {{title}}'",
+   "interval": 1,
+   "max-length": 20,
+   "tooltip": false,
+   "on-click-middle": "playerctl previous",
+   "on-click-right": "playerctl play-pause",
+   "on-click-left": "playerctl next"
 },
 
+
+"custom/cava": {
+     "format": "{}",
+     "exec": "~/.config/waybar/scripts/cava.sh"
+},
 "custom/cpuinfo": {
     "exec": " /home/ralphie/.config/waybar/scripts/cpuinfo.sh",
     "return-type": "json",
@@ -74,7 +64,7 @@
     "rotate": 0,
     "interval": 5, // once every 5 seconds
     "tooltip": true,
-    "max-length": 1000
+    "max-length": 5
 },
 
 "memory": {
@@ -311,9 +301,9 @@
     }
 },
 "clock": {
-    "format": "{:%R 󰃭 %d·%m·%y}",
+    "format": "{:%R  󰃭 %d·%m·%y}",
     "rotate": 0,
-    "format-alt": "{:%R 󰃭 %d·%m·%y}",
+    "format-alt": "{:%R  󰃭 %d·%m·%y}",
     "tooltip-format": "<tt>{calendar}</tt>",
     "calendar": {
         "mode": "month",
