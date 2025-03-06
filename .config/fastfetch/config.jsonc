@@ -3,11 +3,11 @@
 "logo": {
     "source": "$(bash ~/.config/fastfetch/scripts/random_logo.sh)",
     "type": "kitty-direct",
-    "width": 28,
-    "height": 18,
+    "width": 30,
+    "height": 20,
     "padding": {
-        "top": 1,
-        "left": 2
+        "top": 3,
+        "left": 3
     }
 },
     "display": {
@@ -25,7 +25,7 @@
         "break",
         {
             "type": "os",
-            "key": " ",
+            "key": "󰣇 ",
             "keyColor": "34",  // = color4
         },
         {
@@ -81,11 +81,7 @@
         //     "key": " ",
         //     "keyColor": "34", 
         // },
-        {
-            "type": "media",
-            "key": "󰝚 ",
-            "keyColor": "34", 
-        },
+
         // "break",
         "break",
         {

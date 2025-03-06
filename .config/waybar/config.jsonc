@@ -19,8 +19,8 @@
 
 	"modules-left": ["custom/padd","custom/padd",
     "hyprland/workspaces","custom/padd","cpu","custom/padd","memory","custom/padd","temperature","custom/padd","custom/cava","custom/padd","custom/player"],
-	"modules-center": ["idle_inhibitor","custom/padd","clock","custom/padd","custom/padd"],
-	"modules-right": ["custom/updates","custom/padd","power-profiles-daemon","custom/padd","network","custom/padd","bluetooth","custom/padd","custom/bluetooth-interaction","custom/padd","pulseaudio","custom/padd","battery","custom/power","custom/padd","custom/padd"],
+	"modules-center": ["idle_inhibitor","custom/padd","clock","custom/swaync","custom/padd","custom/padd"],
+	"modules-right": ["custom/updates","custom/padd","power-profiles-daemon","network","bluetooth","custom/padd","pulseaudio","custom/padd","battery","custom/power","custom/padd","custom/padd"],
 
 
 // sourced from modules based on config.ctl //
@@ -40,8 +40,8 @@
     "tooltip": true
 },
 
-//this is not working for me either
-
+//You can uncomment this for the title music playing in background
+/*
 "custom/player": {
    "exec": "playerctl metadata --format '{{artist}} - {{title}}'",
    "interval": 1,
@@ -52,7 +52,7 @@
    "on-click-left": "playerctl next"
 },
 
-
+*/
 "custom/cava": {
      "format": "{}",
      "exec": "~/.config/waybar/scripts/cava.sh"
@@ -193,7 +193,7 @@
 "custom/updates": {
     "exec": "/home/ralphie/.config/waybar/scripts/systemupdate.sh",
     "return-type": "json",
-    "format": "󰆦 {}  ",
+    "format": "󰆦 {}",
     "rotate": 0,
     "on-click": "/home/ralphie/.config/waybar/scripts/systemupdate.sh up",
     "interval": 86400, // once every day
@@ -210,14 +210,14 @@
     "tooltip": true,
     "on-click-right": "kitty -- nmtui",
     //"on-click": "nm-connection-editor",
-    "format-wifi": "   ",
+    "format-wifi": "",
     "rotate": 0,
-    "format-ethernet": " 󰈀 ",
+    "format-ethernet": "󰈀",
     "tooltip-format": "Network: <big><b>{essid}</b></big>\nSignal strength: <b>{signaldBm}dBm ({signalStrength}%)</b>\nFrequency: <b>{frequency}MHz</b>\nInterface: <b>{ifname}</b>\nIP: <b>{ipaddr}/{cidr}</b>\nGateway: <b>{gwaddr}</b>\nNetmask: <b>{netmask}</b>",
-    "format-linked": " 󰈀 {ifname} (No IP)",
-    "format-disconnected": " 󰖪  ",
+    "format-linked": "󰈀 {ifname} (No IP)",
+    "format-disconnected": "󰖪",
     "tooltip-format-disconnected": "Disconnected",
-    "format-alt": "<span foreground='#D9FF32'>  {bandwidthDownBytes}</span> <span foreground='#5BFF32'>  {bandwidthUpBytes}</span>",
+    "format-alt": "<span foreground='#000000'>  {bandwidthDownBytes}</span> <span foreground='#000000'>  {bandwidthUpBytes}</span>",
     "interval": 2
 },
 
@@ -325,6 +325,19 @@
     }
 },
 
+
+"custom/swaync":{
+   "format": "󰂚",
+    "exec": "swaync-client --status", 
+    "tooltip": false,
+    "on-click": "swaync-client -t",
+    "on-scroll-up": "swaync-client --dnd-toggle",
+    "on-scroll-down": "swaync-client --dnd-toggle",
+    "interval": 1
+},
+
+
+
 "custom/power": {
     "format": "{}",
     "rotate": 0,
@@ -348,6 +361,7 @@
   },
 
 
+
 // modules for padding //
 
 "custom/l_end": {
@@ -361,7 +375,6 @@
     "interval" : "once",
     "tooltip": false
 },
-
 "custom/sl_end": {
     "format": " ",
     "interval" : "once",

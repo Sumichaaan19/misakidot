@@ -104,6 +104,7 @@ tooltip {
 #bluetooth,
 #custom-cliphist,
 #clock,
+#custom-swaync,
 #custom-cpuinfo,
 #cpu,
 #custom-cava,
@@ -207,8 +208,12 @@ tooltip {
 #backlight,
 #battery{
     color: @main-bg;
-    background: @wb-act-bg;
+
+        /*Size*/
+      
+    padding: 8px 12px; 
 }
+
 #custom-updates
 {
     color: @wb-act-fg;
@@ -239,26 +244,27 @@ tooltip {
 
 #power-profiles-daemon
 {
+   
+
     color: @main-fg;
-    background: none;
-    /*Size*/
-      
-    padding: 1px 1px; 
+    border-radius: 150px 0px 0px 150px;
+    padding: 0px 10px 0px 15px;   
+
 }
 
 
 #power-profiles-daemon.performance {
-    color: @main-fg;
+    color: @main-bg;
    
 }
 
 #power-profiles-daemon.balanced {
-    color: @main-fg;
+    color: @main-bg;
    
 }
 
 #power-profiles-daemon.power-saver {
-  color: @main-fg;
+  color: @main-bg;
     
 }
 
@@ -270,13 +276,22 @@ label:focus {
 
 #clock
 {
+
     color: @main-bg;
-
-
-    /*Size*/
-
-    padding: 8px 12px;     
+    border-radius: 150px 0px 0px 150px;
+    padding: 0px 15px 0px 20px;
 }
+
+#custom-swaync {
+   
+    color: @main-bg;
+    border-radius: 0px 100px 100px 0px;
+    padding: 0px 20px 0px 5px;
+
+
+}
+
+
 
 #custom-power{
     font-size: 20;
@@ -287,21 +302,14 @@ label:focus {
 
 }
 #network
-{
-    color: @main-fg;
-    background: none;
-
-    /*Size*/
-      
-    padding: 1px 1px; 
+{   color: @main-bg;
+    border-radius: 0px 0px 0px 0px;
+    padding: 0px 5px 0px 10px;   
 }
 #bluetooth
-{
-    color: @main-fg;
-    background: none;
-    /*Size*/
-      
-    padding: 1px 1px; 
+{   color: @main-bg;
+    border-radius: 0px 100px 100px 0px;
+    padding: 0px 15px 0px 20px;
 }
 #pulseaudio
 {
@@ -322,6 +330,7 @@ label:focus {
 
 
 #idle_inhibitor{ 
+    color: white;
     padding-right: 10px;
     background: none;
     padding: 8px 12px;     
@@ -362,7 +371,7 @@ label:focus {
 }
 
 #custom-rr_end {
-    border-radius: 0px 7px 7px 0px;
+    border-radius: 0px 30px 30px 0px;
     margin-right: 8px;
     padding-right: 0px;
 }
@@ -375,20 +384,18 @@ label:focus {
 
 
 /* this is the original */
-
 #custom-r_end {
-    border-radius: 0px 5px 5px 0px;
-    margin-right: 1px;
+    border-radius: 0px 30px 30px 0px;
+    margin-right: 0px;
     padding-right: 0px;
-    background: #EAB2C2;
 }
 
-
 #custom-l_end {
-    border-radius: 0px 0px 0px 0px;
-    margin-left: 1px;
+
+    border-width: 110px 110px 110px 110px;
+    border-radius: 500px 0px 0px 500px;
+    margin-left: 0px;
     padding-left: 0px;
-    background: #FFD966;
 }
 
 * {
