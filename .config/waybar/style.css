@@ -242,15 +242,6 @@ tooltip {
     padding: 8px 12px; 
 }
 
-#power-profiles-daemon
-{
-   
-
-    color: @main-fg;
-    border-radius: 150px 0px 0px 150px;
-    padding: 0px 10px 0px 15px;   
-
-}
 
 
 #power-profiles-daemon.performance {
@@ -301,15 +292,28 @@ label:focus {
     background: @wb-act-bg;
 
 }
+
+
+
+#power-profiles-daemon
+{
+   
+
+    color: @main-fg;
+    border-radius: 150px 0px 0px 150px;
+    padding: 0px 5px 0px 15px;   
+
+}
+
 #network
 {   color: @main-bg;
     border-radius: 0px 0px 0px 0px;
-    padding: 0px 5px 0px 10px;   
+    padding: 0px 10px 0px 20px;   
 }
 #bluetooth
 {   color: @main-bg;
     border-radius: 0px 100px 100px 0px;
-    padding: 0px 15px 0px 20px;
+    padding: 0px 20px 0px 20px;
 }
 #pulseaudio
 {
