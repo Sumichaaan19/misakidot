@@ -1,5 +1,3 @@
-# Enable colors for LS
-export CLICOLOR=2
 alias ls='ls --color=auto'
 
 # Define warmer yellow color
