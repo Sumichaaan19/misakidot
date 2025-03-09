@@ -20,7 +20,7 @@
 	"modules-left": ["custom/padd","custom/padd",
     "hyprland/workspaces","custom/padd","cpu","custom/padd","memory","custom/padd","temperature","custom/padd","custom/cava","custom/padd","custom/player"],
 	"modules-center": ["idle_inhibitor","custom/padd","clock","custom/swaync","custom/padd","custom/padd"],
-	"modules-right": ["custom/updates","custom/padd","power-profiles-daemon","network","bluetooth","custom/padd","pulseaudio","custom/padd","battery","custom/power","custom/padd","custom/padd"],
+	"modules-right": ["custom/updates","custom/padd","power-profiles-daemon","network","bluetooth","custom/padd","pulseaudio","custom/padd","battery","custom/padd","custom/power","custom/padd","custom/padd"],
 
 
 // sourced from modules based on config.ctl //
